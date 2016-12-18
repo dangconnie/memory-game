@@ -57,7 +57,7 @@ $(document).ready(function(){
     			cardsUp.addClass('matched');
     			cardsUp.removeClass('flip');
                 setTimeout(function(){
-                    cardsUp.hide();
+                    cardsUp.fadeOut(2000);
                 }, 2000);
                 
     		}else{

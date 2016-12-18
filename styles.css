@@ -1,28 +1,27 @@
 img{
-	width: 230px;
-	height: 255px;
+	width: 200px;
+	height: 200px;
 
 }
 
 .title{
 	color: white;
-	font-size: 30px;
-	font-family: roboto;
+	font-size: 50px;
+	font-family:'Marck Script', cursive;
 	position: relative;
 	text-align: center;
 }
 
-/* Set up the parent as a 3D playground with perspective */
+/* Set up the parent as a 3D playground with perspective. This is the outer grid that had black outlines */
 .mg-tile{
 	height: 230px;
 	min-width: 255px;
-	/* border: 2px solid black; */
 	perspective: 500px;
 }
 
 .mg-tile-inner{
-	height: 230px;
-	width: 255px;
+	height: 200px;
+	width: 200px;
 	position: relative;
 	transform-style: preserve-3d;
 	transition: all 1s;
@@ -52,14 +51,15 @@ one element, inside another element
 .mg-back{
 	background: url('images/quindecim_emblem.png') no-repeat 50% 50%;
 	/* Need to force a width and height on it b/c there is nothing in the body right now. Otherwise, background image won't show up. */
-	width: 230px;
-	height: 255px;
+	width: 200px;
+	height: 200px;
 
 }
 
 .flip, .matched{
 	transform: rotateY(-180deg);
-}
+}	
+
 
 body{
 	background: url('images/chandelier.png') no-repeat 50% 50%;
