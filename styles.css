@@ -1,0 +1,66 @@
+img{
+	width: 230px;
+	height: 255px;
+
+}
+
+.title{
+	color: white;
+	font-size: 30px;
+	font-family: roboto;
+	position: relative;
+	text-align: center;
+}
+
+/* Set up the parent as a 3D playground with perspective */
+.mg-tile{
+	height: 230px;
+	min-width: 255px;
+	/* border: 2px solid black; */
+	perspective: 500px;
+}
+
+.mg-tile-inner{
+	height: 230px;
+	width: 255px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all 1s;
+}
+
+/* one element, both classes */
+/* .mg-front.mg-back{} */
+/* #aDiv.mg-back{} */
+/*
+one element, inside another element
+.mg-front .mg-back{} */
+
+/* two completely separate elements */
+.mg-front, .mg-back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 2px solid red;
+	backface-visibility: hidden;
+}
+
+/* Flip the front of the card facedown */
+.mg-front{
+	transform: rotateY(180deg);
+}
+
+.mg-back{
+	background: url('images/quindecim_emblem.png') no-repeat 50% 50%;
+	/* Need to force a width and height on it b/c there is nothing in the body right now. Otherwise, background image won't show up. */
+	width: 230px;
+	height: 255px;
+
+}
+
+.flip, .matched{
+	transform: rotateY(-180deg);
+}
+
+body{
+	background: url('images/chandelier.png') no-repeat 50% 50%;
+}
