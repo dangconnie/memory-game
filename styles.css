@@ -12,6 +12,25 @@ img{
 	text-align: center;
 }
 
+.numClicks{
+	color: white;
+	font-size: 20px;
+}
+
+.btn{
+	margin-bottom: 15px;
+	margin-right: 15px;
+	color: black;
+	background-color: white;
+}
+
+.btn:hover{
+	font-family: 'Griffy', cursive;
+	font-size: 20px;
+	transition-duration: 0.4s;
+    background-color: #f44336;
+}
+
 /* Set up the parent as a 3D playground with perspective. This is the outer grid that had black outlines */
 .mg-tile{
 	height: 230px;
@@ -60,7 +79,13 @@ one element, inside another element
 	transform: rotateY(-180deg);
 }	
 
+.matched{
+	transform: rotateX(45deg);
+	transition: all 4s;
+}	
 
 body{
 	background: url('images/chandelier.png') no-repeat 50% 50%;
 }
+
+
