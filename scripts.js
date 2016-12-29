@@ -1,4 +1,6 @@
-//I still need to add in win screen, and different grid sizes based on the buttons clicked. Penalty clicks? Countdown timer?
+//I still need to add in win screen, and different grid sizes based on the buttons clicked. Penalty clicks? Countdown timer? On click, the difficulty buttons turns into a countdown timer in the form of a progress bar.
+//easy-8 medium-16 hard-24 
+
 
 var cards = [
     '<img src="images/nona.jpg">',
@@ -59,12 +61,11 @@ $(document).ready(function(){
         $('.numClicks').text("Number of Clicks: " + numClicks);
 
 
-        // If you made "this" into .mg-tile-inner, you would flip all   tiles at once
+        // If you made "this" into .mg-tile-inner, you would flip all tiles at once
 	   $(this).toggleClass('flip');
 
 	   var cardsUp = $('.flip');
        var matched = 0;
-       var flip = 0;
 	
 	   if(cardsUp.length == 2){
 		  // Check to see if images are the same. We only want the flipped elements.
@@ -73,12 +74,12 @@ $(document).ready(function(){
 		  if(cardsUpImages[0].src == cardsUpImages[1].src){
 			 // This is a match!
 			 cardsUp.addClass('matched');
+                setTimeout(function(){
+                    cardsUp.fadeOut(1500);
+                }, 4000);
                 matched++;
 
 			 cardsUp.removeClass('flip');
-                setTimeout(function(){
-                    cardsUp.fadeOut(1300);
-                }, 2000);
             }else{
 		     // The user has flipped 2 cards. They do not match. Flip them back over. Wait 2 seconds before you remove class. Otherwise, you can't even see them flip back over.
 		      setTimeout(function(){

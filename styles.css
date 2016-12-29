@@ -1,7 +1,6 @@
 img{
 	width: 200px;
 	height: 200px;
-
 }
 
 .title{
@@ -80,12 +79,15 @@ one element, inside another element
 }	
 
 .matched{
-	transform: rotateX(45deg);
+	transform: rotateX(-180deg);
 	transition: all 4s;
 }	
 
 body{
-	background: url('images/chandelier.png') no-repeat 50% 50%;
+	background: url('images/chandelier.png') no-repeat fixed;
+	background-size: cover;
 }
 
-
+.container{
+	margin: auto;
+}
