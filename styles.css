@@ -30,6 +30,10 @@ img{
     background-color: #f44336;
 }
 
+.btn reset{
+	display: block;
+}
+
 /* Set up the parent as a 3D playground with perspective. This is the outer grid that had black outlines */
 .mg-tile{
 	height: 230px;
