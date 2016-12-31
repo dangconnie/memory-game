@@ -34,22 +34,43 @@ var cards = [
 // All code will wait until the DOM is ready!
 $(document).ready(function(){
 
+
+  //Once user has made the selection, fade out all the buttons and display the number of clicks
     $('#easy').click(function(){
         // reset();
         gridSize = 8;
+       $('#easy').fadeOut(1000);
+       $('#normal').fadeOut(1000);
+       $('#hard').fadeOut(1000);
+       $('#numClicks').fadeIn(1500);
+       $('#numClicks').css({"display": "block"});
         makeCards();
     })
     $('#normal').click(function(){
         // reset();
         gridSize = 12;
+       $('#easy').fadeOut(1000);
+       $('#normal').fadeOut(1000);
+       $('#hard').fadeOut(1000);
+       $('#numClicks').fadeIn(1500);
+       $('#numClicks').css({"display": "block"});
         makeCards();
     })
     $('#hard').click(function(){
         // reset();
         gridSize = 24;
+       $('#easy').fadeOut(1000);
+       $('#normal').fadeOut(1000);
+       $('#hard').fadeOut(1000);
+       $('#numClicks').fadeIn(1500);
+       $('#numClicks').css({"display": "block"});
         makeCards();
     })        
 });
+
+ // $('#numclicks').css({"display": "block"});
+ // document.getElementById(numClicks).innerHTML = "Number of Clicks: " + numClicks;
+
 
 //Need to start var clicks at 2 because each image that is clicked on is really rotating two images back to back, so the counter counts 2 clicks for each single click.
 var clicks = 2;
