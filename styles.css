@@ -19,14 +19,24 @@ img{
 }
 
 .btn{
-	margin-bottom: 25px;
+	margin-bottom: 35px;
+	margin-left: 25%;
+	margin-top: 45px;
 	color: black;
 	background-color: white;
+	padding: 20px 30px;
+	font-size: 25px;
+	border-radius: 15px;
+}
+
+#reset.btn{
+	display: none;
+	margin-left: 43%;
 }
 
 .btn:hover{
 	font-family: 'Griffy', cursive;
-	font-size: 20px;
+	font-size: 35px;
 	transition-duration: 0.4s;
 }
 
@@ -49,10 +59,6 @@ img{
 	color: white;
 }
 
-.btn reset{
-	display: block;
-}
-
 /* Set up the parent as a 3D playground with perspective. This is the outer grid that had black outlines */
 .mg-tile{
 	height: 230px;
@@ -61,8 +67,8 @@ img{
 }
 
 .mg-tile-inner{
-	height: 200px;
-	width: 200px;
+	height: 255px;
+	max-width: 200px;
 	position: relative;
 	transform-style: preserve-3d;
 	transition: all 1s;
@@ -118,8 +124,14 @@ body{
 	color: white;
 	font-size: 200px;
 	font-weight: bold;
-	margin: auto;
-	margin-top: 13%;
+}
+
+.winMessage{
+	margin-top: 10%;
+}
+
+.loseMessage{
+	margin-top: 30px;
 }
 
 

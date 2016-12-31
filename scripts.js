@@ -151,6 +151,7 @@ function makeCards(){
                 setTimeout(function(){
                     $('.winMessage').fadeIn(1000)//Fade in winning message
                         $('.winMessage').css({"display": "block"});
+                        $('#reset').css({"display": "block"});
                 }, 1000);    
             }
         }
@@ -160,6 +161,8 @@ function makeCards(){
             setTimeout(function(){
                     $('.loseMessage').fadeIn(1000)//Fade in winning message
                         $('.loseMessage').css({"display": "block", "font-size": "140px", "margin-top": "85px"});
+                        $('#reset').css({"display": "block"});
+
                 }, 1000);    
         }
     });
