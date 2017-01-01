@@ -193,5 +193,4 @@ function makeCards(){
     }    
 }
 
-// $(this).toggleClass('flip');
-//            var cardsUp = $('.flip');
+

@@ -21,10 +21,9 @@ img{
 .btn{
 	margin-bottom: 35px;
 	margin-left: 25%;
-	margin-top: 45px;
+	margin-top: 50px;
 	color: black;
 	background-color: white;
-	padding: 20px 30px;
 	font-size: 25px;
 	border-radius: 15px;
 }
@@ -86,7 +85,7 @@ one element, inside another element
 	position: absolute;
 	top: 25px;
 	left: 0;
-	border: 2px solid red;
+	border: 2px solid white;
 	backface-visibility: hidden;
 }
 
