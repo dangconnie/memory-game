@@ -29,7 +29,7 @@ img{
 }
 
 #reset.btn{
-	display: none;
+	display: block;
 	margin-left: 43%;
 }
 

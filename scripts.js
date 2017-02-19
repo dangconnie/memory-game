@@ -162,7 +162,6 @@ function makeCards(){
                     $('.loseMessage').fadeIn(1000)//Fade in winning message
                         $('.loseMessage').css({"display": "block", "font-size": "140px", "margin-top": "85px"});
                         $('#reset').css({"display": "block"});
-
                 }, 1000);    
         }
     });
@@ -175,22 +174,25 @@ function makeCards(){
     $('#reset').click(function(){
         reset();
     })
+}
 
-    function reset(){//Will only show up at the end of the game with the lose/win message
-        
+function reset(){//Will only show up at the end of the game with the lose/win message
         var newCards = [];
         var clicks = 2;
         var numClicks = 0;
         var matched = 0;
         var mgHTML = '';
+        
 
-        $('.flipped').removeClass();
+        $('.flip').removeClass();
         $('.matched').removeClass();
         $('.winMessage').css({"display": "none"});//ok
         $('.loseMessage').css({"display": "none"});//ok
         $('.numClicks').text("Number of Clicks: " + numClicks);//numClicks keeps adding on
         $('.container').fadeIn(1000)
     }    
-}
 
 
+ // $(this).toggleClass('flip');
+ //           var cardsUp = $('.flip');
+ // var cardsUpImages = cardsUp.find('.mg-front img');
